@@ -1,0 +1,29 @@
+trending_topics_task:
+  description: >
+    Research and identify the current trending songs titles and their performers for 2025,
+    including songs publications or anticipated release dates, and popular genres.
+  expected_output: >
+    A concise Markdown report listing the trending song titles for 2025 with names, dates and brief
+    notes, along with genre classification, key insights, data points and sources.
+  agent: trending_songs_agent
+  output_file: output/trending_songs.md
+  # Provide a search query for SerperDevTool to fetch real-time data
+  search_query: "trending songs 2025"
+
+top_rock_performers_task:
+  description: >
+    Research leading rock performers and list his upcoming pieces, including release dates and brief
+    descriptions.
+  expected_output: >
+    A concise Markdown summary of top rock performers and their upcoming pieces.
+  agent: top_rock_agent
+  output_file: output/top_rock_performers.md
+
+genre_task:
+  description: >
+    For the given genre {genre}, conduct an in-depth market analysis covering market size,
+    audience demographic, performers and emerging subgenres.
+  expected_output: >
+    A concise Markdown report detailing genre performance, demographics, authors, and trends.
+  agent: genre_agent
+  output_file: output/genre_research.md
