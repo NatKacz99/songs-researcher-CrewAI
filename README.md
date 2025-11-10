@@ -1,0 +1,1 @@
+This app is responsible for searching for top songs, their authors, information about their future singles, also for specific genres. I used openai/gpt-4o-mini language model and the Serfer platform, which supports online information searches using AI.
